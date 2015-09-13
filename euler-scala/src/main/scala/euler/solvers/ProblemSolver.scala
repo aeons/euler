@@ -1,6 +1,7 @@
 package euler.solvers
 
 import euler.Problem
+import euler.exceptions.ProblemSolverNotFoundException
 
 import scala.util.control.NonFatal
 
@@ -48,6 +49,6 @@ object ProblemSolver {
   }
 }
 
-object ProblemSolverNotFoundException extends Exception
 
-object ProblemNotFoundException extends Exception
+
+

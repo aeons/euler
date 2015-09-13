@@ -1,0 +1,3 @@
+package euler.exceptions
+
+object ProblemSolverNotFoundException extends Exception

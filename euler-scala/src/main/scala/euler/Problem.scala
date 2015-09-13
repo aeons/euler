@@ -31,7 +31,6 @@ object Problem {
   }
 
   private def parseProblem(ls: Iterable[String]): Problem = {
-
     val n = (number findFirstIn ls.head get).toInt
     val t = ls.drop(4).dropRight(5).map(_.trim).mkString("\n")
     val h = (md5Hash findFirstIn ls.takeRight(3).head).get

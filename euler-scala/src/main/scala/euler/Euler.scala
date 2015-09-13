@@ -4,8 +4,7 @@ import euler.solvers.ProblemSolver
 
 object Euler {
   def main(args: Array[String]): Unit = {
-    val n = 1
-    println(s"Solving problem $n.")
+    val n = 2
     euler(n)
   }
 
@@ -14,6 +13,11 @@ object Euler {
       println(s"Could not load problem $n.")
       return Unit
     }
+
+    println(s"Project Euler - Problem ${p.number}")
+    println()
+    println(p.text)
+    println()
 
     val answer = ProblemSolver.solveWithTime(p).getOrElse{
       println(s"No solver found for problem $n.")
