@@ -8,8 +8,8 @@ object Euler {
     euler(n)
   }
 
-  private def euler(n:Int): Any = {
-    val p :Problem = Problem.loadFromFile("C:/code/euler/project_euler.txt", n).getOrElse {
+  private def euler(n: Int): Any = {
+    val p: Problem = Problem.loadFromFile("C:/code/euler/project_euler.txt", n).getOrElse {
       println(s"Could not load problem $n.")
       return Unit
     }
@@ -19,7 +19,7 @@ object Euler {
     println(p.text)
     println()
 
-    val answer = ProblemSolver.solveWithTime(p).getOrElse{
+    val answer = ProblemSolver.solveWithTime(p).getOrElse {
       println(s"No solver found for problem $n.")
       return Unit
     }
